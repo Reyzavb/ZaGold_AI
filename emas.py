@@ -1309,7 +1309,7 @@ with tab1:
 
             # [UI] Garis pemisah vertikal antara aktual & prediksi
             ax.axvline(
-                hist_dates_dt[-1],
+                hist_dates_dt.values[-1],
                 color="#A0AEC0", linestyle=":", alpha=0.55, linewidth=1.3,
             )
 
