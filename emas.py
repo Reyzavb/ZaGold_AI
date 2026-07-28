@@ -1324,7 +1324,7 @@ with tab1:
             # [UI] Anotasi "PREDIKSI →" di atas garis pemisah
             ymax = ax.get_ylim()[1]
             ax.text(
-                hist_dates_dt[-1], ymax,
+                hist_dates_dt.values[-1], ymax,
                 "  PREDIKSI →",
                 fontsize=8, color=pred_color, fontweight="bold",
                 va="top", ha="left", style="italic",
