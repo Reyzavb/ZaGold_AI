@@ -1281,7 +1281,7 @@ with tab1:
 
             # Hubungkan garis historis terakhir ke garis prediksi
             forecast_dates_dt = forecast_dates.to_pydatetime()
-            all_pred_dates  = np.concatenate([[hist_dates_dt[-1]], forecast_dates_dt])
+            all_pred_dates = np.concatenate([[hist_dates_dt.values[-1]], forecast_dates_dt])
             all_pred_values = np.concatenate([[hist_prices[-1]], predictions])
 
             # Tentukan warna tren prediksi (Naik = Hijau, Turun = Merah)
